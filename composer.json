@@ -1,7 +1,7 @@
 {
     "name": "horde/pgp",
     "description": "PGP library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org",
     "license": "LGPL-2.1",
     "authors": [
@@ -12,32 +12,29 @@
         }
     ],
     "version": "1.0.0alpha1",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3.3 || ^7",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Http": "^2",
-        "pear-pear.horde.org/Horde_Mime": "^2.8",
-        "pear-pear.horde.org/Horde_Stream": "^1.5",
-        "pear-pear.horde.org/Horde_Translation": "^2.2",
-        "pear-pear.horde.org/Horde_Url": "^2",
-        "pear-pear.horde.org/Horde_Util": "^2",
+        "horde/exception": "dev-master",
+        "horde/http": "dev-master",
+        "horde/mime": "dev-master",
+        "horde/stream": "dev-master",
+        "horde/translation": "dev-master",
+        "horde/url": "dev-master",
+        "horde/util": "dev-master",
         "ext-hash": "*"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2.1",
+        "horde/test": "^2.1",
         "ext-openssl": "*",
         "ext-zlib": "*"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Pgp": "1.*",
-        "pear-horde/Horde_Pgp": "1.*"
     },
     "autoload": {
         "psr-0": {
